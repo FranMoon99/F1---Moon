@@ -1,0 +1,163 @@
+<!--
+MIT License
+
+Copyright (c) 2024 Diego
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
+/* Archivo styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1d1d;
+    color: white;
+}
+
+header {
+    background-color: #a00;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #333;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#pilotos {
+    padding: 2rem;
+}
+
+#pilotos h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.driver {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: #333;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.driver img {
+    width: 150px; /* Ajusta el tamaño uniforme */
+    height: 150px;
+    object-fit: cover; /* Evita la distorsión */
+    border-radius: 8px;
+}
+
+.driver-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.driver-content h3 {
+    margin-top: 0;
+}
+
+.driver-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.driver-content a:hover {
+    text-decoration: underline;
+}
+
+.driver-images {
+    display: flex;
+    flex-direction: row; /* Mantiene fila horizontal */
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 10px;
+}
+
+.driver-images img {
+    width: 80px; /* Ajusta el tamaño uniforme */
+    height: 80px;
+    object-fit: cover; /* Evita la distorsión */
+    border-radius: 50%; /* Opcional: redondeado */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+
+}
+@media (max-width: 768px) {
+            .driver {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .driver img {
+                width: 100%;
+                height: auto;
+            }
+
+            .driver-content {
+                padding: 1rem;
+            }
+
+            .driver-images {
+                justify-content: center;
+            }
+
+            .driver-images img {
+                width: 80px;
+                height: 80px;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+                font-size: 1.2rem;
+            }
+        }
